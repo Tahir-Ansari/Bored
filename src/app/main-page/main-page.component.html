@@ -1,0 +1,9 @@
+    <div class="container">
+        <h1 class="heading">If you are bored, just hit me</h1>
+        <p class="data">
+           {{ boredData?.activity }} </p><br>
+         <p class="data"> Type: {{ boredData?.type }} </p><br>
+         <p class="data"> Participants: {{ boredData?.participants }}</p> <br>
+       
+        <button class="button" (click)="getActivity()">Click Me</button>
+      </div>
