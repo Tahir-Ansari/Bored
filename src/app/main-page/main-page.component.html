@@ -1,9 +1,22 @@
-    <div class="container">
-        <h1 class="heading">If you are bored, just hit me</h1>
-        <p class="data">
-           {{ boredData?.activity }} </p><br>
-         <p class="data"> Type: {{ boredData?.type }} </p><br>
-         <p class="data"> Participants: {{ boredData?.participants }}</p> <br>
-       
-        <button class="button" (click)="getActivity()">Click Me</button>
+<div class="background">
+  <div class="container">
+      <h1 class="heading">Feeling Bored? Let's Spice Things Up!</h1>
+      
+      <div *ngIf="boredData?.activity" class="card">
+          <p class="data"><strong>Activity:</strong> {{ boredData.activity }}</p>
       </div>
+      <div *ngIf="boredData?.type" class="card">
+          <p class="data"><strong>Type:</strong> {{ boredData.type }}</p>
+      </div>
+      <div *ngIf="boredData?.participants" class="card">
+          <p class="data"><strong>Participants:</strong> {{ boredData.participants }}</p>
+      </div>
+      
+      <button class="button" (click)="getActivity()">Discover Something New</button>
+
+      <!-- Signature -->
+      <div class="signature">
+        <p>🚀 Developed with passion by <span class="developer">Tahir</span></p>
+    </div>
+  </div>
+</div>

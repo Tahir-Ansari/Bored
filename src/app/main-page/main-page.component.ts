@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BoredapiService } from '../boredapi.service';
 
 @Component({
@@ -6,10 +6,14 @@ import { BoredapiService } from '../boredapi.service';
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.css']
 })
-export class MainPageComponent {
+export class MainPageComponent implements OnInit {
 
   boredData: any;
   constructor(private apiService: BoredapiService) { }
+  
+  ngOnInit(): void {
+    this.getActivity();
+  }
 
 
   getActivity():void {

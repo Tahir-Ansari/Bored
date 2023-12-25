@@ -1,61 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif; /* Set your desired font family */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: linear-gradient(to right top, #FF4E50, #F9D423);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-  .container {
-    width: 90%;
-    max-width: 800px;
-    padding: 50px;
-    border: 2px solid #333;
-    background-color: #FF4E50; /* Update the background color here */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-  }
-  
-  .data {
-    font-size: 24px;
-    margin-bottom: 40px;
-    color: #333;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  
-  .button {
-    display: block;
-    margin: 0 auto;
-    width: 50%;
-    padding: 14px 28px;
-    background-color: #FFC107;
-    color: #333;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  
-  .heading {
-    font-size: 36px;
-    margin-bottom: 60px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 10, 0, 0.5);
-  }
-  
-  
+.background {
+  background-color: #7db9e8; /* Set your unique background color */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Added box shadow */
+  background-color: #f5f5f5; /* Set your unique background color for the container */
+  max-width: 500px; /* Adjusted maximum width for better responsiveness */
+  width: 80%; /* Adjusted width */
+  height: auto; /* Adjusted height */
+}
+
+.heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.data {
+  font-size: 18px;
+  color: #555; /* Set your desired text color */
+  margin: 5px 0;
+}
+
+.data strong {
+  font-weight: bold; /* Make the content bold */
+}
+
+.button {
+  background-color: #ff6961; /* Set your unique button background color */
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.button:hover {
+  background-color: #ff4d4d; /* Set your unique button background color on hover */
+}
+
+/* Signature Style */
+.signature {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777; /* Set your desired text color */
+}
+
+.signature p {
+  margin: 0;
+}
+
+.signature .developer {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Set your desired text color */
+}
